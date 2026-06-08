@@ -1,0 +1,7 @@
+# Arquivo: .gitignore
+
+# Ignorar credenciais de e-mail
+config.php
+
+# (Opcional) Ignorar a pasta do PHPMailer se você não quiser versioná-la
+/PHPMailer/
