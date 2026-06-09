@@ -3,16 +3,17 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
+require_once __DIR__ . '/../PHPMailer/Exception.php';
+require_once __DIR__ . '/../PHPMailer/PHPMailer.php';
+require_once __DIR__ . '/../PHPMailer/SMTP.php';
 
-// INCLUI O ARQUIVO DE CONFIGURAÇÃO SEGURO
-require_once 'config.php'; 
+// INCLUI O ARQUIVO DE CONFIGURAÇÃO SEGURO (caminho absoluto relativo)
+require_once __DIR__ . '/../config.php';
 
 // Validação e limpeza do formulário (o trecho que você enviou)
 if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(500);
+    http_response_code(400);
+    echo json_encode(['status' => 'error', 'message' => 'Invalid input']);
     exit();
 }
 
@@ -24,6 +25,8 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 // Inicia a classe PHPMailer
 $mail = new PHPMailer(true);
 
+$isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
+
 try {
     // Configurações do Servidor SMTP (puxando do config.php)
     $mail->isSMTP();                                            
@@ -31,8 +34,15 @@ try {
     $mail->SMTPAuth   = true;                                   
     $mail->Username   = SMTP_USER;           
     $mail->Password   = SMTP_PASS;           
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  
+    // Choose encryption based on port (465 => SMTPS, 587 => STARTTLS)
+    if (defined('SMTP_PORT') && intval(SMTP_PORT) === 587) {
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    } else {
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    }
     $mail->Port       = SMTP_PORT;           
+
+    
 
     // Remetente e Destinatários
     $mail->setFrom(SMTP_USER, 'Site Strattacorp'); // Quem envia (seu servidor autenticado)
@@ -51,13 +61,29 @@ try {
 
     // Envia o e-mail
     $mail->send();
-    http_response_code(200); // Sucesso!
-    
+
+    if ($isAjax) {
+        header('Content-Type: application/json; charset=utf-8');
+        http_response_code(200);
+        echo json_encode(['status' => 'ok']);
+        exit();
+    } else {
+        header('Location: ../thank-you.html');
+        exit();
+    }
+
 } catch (Exception $e) {
-    // Linha adicionada temporariamente para diagnóstico:
-    echo "Erro real do servidor: " . $mail->ErrorInfo;
-    
-    http_response_code(500); 
+    // Log minimal error to server error log (no debug output to user)
+    error_log('Mail error: ' . $mail->ErrorInfo);
+    if ($isAjax) {
+        header('Content-Type: application/json; charset=utf-8');
+        http_response_code(500);
+        echo json_encode(['status' => 'error', 'message' => 'Mail server error']);
+        exit();
+    } else {
+        header('Location: ../contact.html?error=1');
+        exit();
+    }
 }
 ?>
 
