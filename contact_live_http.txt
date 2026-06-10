@@ -1,3 +1,30 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 14367
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Wed, 10 Jun 2026 14:58:23 GMT
+Access-Control-Allow-Origin: *
+ETag: "6a297b8f-381f"
+expires: Wed, 10 Jun 2026 15:19:58 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: A8AA:09E6:5711CF:595DD8:6A297E46
+Accept-Ranges: bytes
+Age: 0
+Date: Wed, 10 Jun 2026 15:09:58 GMT
+Via: 1.1 varnish
+X-Served-By: cache-gru-sbsp2090048-GRU
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1781104198.276938,VS0,VE131
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 8281da623321bcfcf2e243b26e9a32dcb6ca9bf5
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -59,9 +86,9 @@
                                 <span>Port</span>
                             </div>
                             <!-- <div class="lang-dropdown">
-                                    <a href="index.html">Português</a>
+                                    <a href="index.html">Portugu├¬s</a>
                                     <a href="index.html">English</a>
-                                    <a href="index.html">Español</a> 
+                                    <a href="index.html">Espa├▒ol</a> 
                                 </div> -->
                         </div>
                     </div>
@@ -90,9 +117,9 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <!-- <a href="about.html" class="nav-item nav-link">Sobre</a> -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Soluções</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solu├º├Áes</a>
                         <div class="dropdown-menu">
-                            <a href="feature.html" class="dropdown-item">Soluções Integradas</a>
+                            <a href="feature.html" class="dropdown-item">Solu├º├Áes Integradas</a>
                             <a href="execsearch.html" class="dropdown-item">Recrutamento de Executivos</a>
                             <a href="assessment.html" class="dropdown-item">Assessment Corporativo</a>
                             <a href="coaching.html" class="dropdown-item">Coaching Executivo</a>
@@ -121,9 +148,9 @@
                             <i class="fa fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Escritório</h3>
-                            <p>Av. Eng. Luis Carlos Berrini, 550 | 4º Andar
-                                Brooklin | São Paulo, SP</p>
+                            <h3>Escrit├│rio</h3>
+                            <p>Av. Eng. Luis Carlos Berrini, 550 | 4┬║ Andar
+                                Brooklin | S├úo Paulo, SP</p>
                         </div>
                     </div>
                     <!--Fone (escondido) 
@@ -169,7 +196,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email"
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
                                     required="required" />
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -204,8 +231,9 @@
                             <div class="footer-contact">
                                 <h2>Contatos</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>Av. Eng. Luis Carlos Berrini, 550 -
-                                    4º Andar Brooklin Novo | São Paulo, SP</p>
+                                    4┬║ Andar Brooklin Novo | S├úo Paulo, SP</p>
                                 <!-- <p><i class="fa fa-phone-alt"></i>+55 (11) 9 9999-9999</p> -->
+  0      0   0      0   0      0      0      0           00:01              0
                                 <p><a href="mailto:contato@strattacorp.com.br"><i class="fa fa-envelope"></i></a><a
                                         href="mailto:contato@strattacorp.com.br">contato@strattacorp.com.br</a></p>
 
@@ -219,23 +247,26 @@
                         </div>
                         <div class="col-md-6">
                             <div class="footer-link">
-                                <h2>Guia Rápido</h2>
+                                <h2>Guia R├ípido</h2>
                                 <!-- <a href="about.html">Sobre</a> -->
-                                <a href="feature.html">Soluções</a>
+                                <a href="feature.html">Solu├º├Áes</a>
+100  14367 100  14367   0      0  10289      0   00:01   00:01          10302
+100  14367 100  14367   0      0  10286      0   00:01   00:01          10302
+100  14367 100  14367   0      0  10285      0   00:01   00:01          10302
                                 <a href="blog.html">Oportunidades</a>
                                 <a href="terms.html">Termos de uso</a>
-                                <a href="privacy-policy.html">Política de privacidade</a>
+                                <a href="privacy-policy.html">Pol├¡tica de privacidade</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="footer-newsletter">
-                        <h2>Agende sua reunião</h2>
+                        <h2>Agende sua reuni├úo</h2>
                         <p>
-                            Envie seu email que teremos a satisfação de marcar uma reunião com a
-                            sua empresa para avaliar, debater e sugerir as melhores soluções para
-                            necessidades do seu negócio e estrutura organizacional.
+                            Envie seu email que teremos a satisfa├º├úo de marcar uma reuni├úo com a
+                            sua empresa para avaliar, debater e sugerir as melhores solu├º├Áes para
+                            necessidades do seu neg├│cio e estrutura organizacional.
                         </p>
                         <div class="form">
                             <input class="form-control" placeholder="Escreva seu e-mail">
