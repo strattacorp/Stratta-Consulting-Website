@@ -150,10 +150,15 @@
                 </div>
                 <div class="col-md-7">
                     <div class="contact-form">
+                        <div id="errorAlert" style="display:none;" class="alert alert-danger">
+                            <strong>Erro ao enviar mensagem.</strong> Por favor, tente novamente ou entre em contato
+                            conosco pelo email contato@strattacorp.com.br.
+                        </div>
                         <form name="sentMessage" id="contactForm" accept-charset="UTF-8"
                             action="https://formsubmit.co/contato@strattacorp.com.br" method="POST">
                             <input type="hidden" name="_subject" value="Nova mensagem do site" />
                             <input type="hidden" name="_next" value="./index.html" />
+                            <input type="hidden" name="_error" value="./contact.html?error=1" />
                             <input type="hidden" name="_captcha" value="false" />
                             <input type="hidden" name="_language" value="pt-BR" />
                             <input type="hidden" name="_autoresponse"
@@ -265,6 +270,20 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Show error alert if redirected with error parameter -->
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('error')) {
+                const errorAlert = document.getElementById('errorAlert');
+                if (errorAlert) {
+                    errorAlert.style.display = 'block';
+                    errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>
