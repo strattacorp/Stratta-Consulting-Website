@@ -357,7 +357,7 @@ a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(160, 120, 120, 0.566);
+    background: rgba(160, 120, 120, 0.069);
     z-index: 1;
 }
 
@@ -369,26 +369,31 @@ a:focus {
 
 .carousel .carousel-text {
     position: absolute;
-    max-width: 550px;
+    max-width: 45%;
     height: calc(100vh - 35px);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     z-index: 2;
+    left: 7%;
+    padding-top: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
 }
 
 .carousel .carousel-text h1 {
     text-align: left;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 200;
-    margin-bottom: 220px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .carousel .carousel-text p {
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     margin-bottom: 25px;
 }
@@ -487,6 +492,13 @@ a:focus {
         height: calc(100vh - 105px);
     }
 
+    .carousel .carousel-text {
+        max-width: 80%;
+        justify-content: flex-start;
+        left: 5%;
+        padding-top: 220px;
+    }
+
     .carousel .carousel-text h1 {
         font-size: 35px;
     }
@@ -510,6 +522,11 @@ a:focus {
         height: calc(100vh - 70px);
     }
 
+    .carousel .carousel-text {
+        max-width: 85%;
+        padding-top: 150px;
+    }
+
     .carousel .carousel-text h1 {
         font-size: 30px;
     }
@@ -522,8 +539,19 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
+    .carousel .carousel-text {
+        max-width: 90%;
+        padding-top: 110px;
+    }
+
     .carousel .carousel-text h1 {
         font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .carousel .carousel-text p {
+        text-align: left;
+        font-size: 14px;
     }
 
     .carousel .carousel-text .btn {
@@ -1588,6 +1616,7 @@ a:focus {
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
+/* 
 .footer {
     position: relative;
     margin-top: 45px;
@@ -1745,7 +1774,153 @@ a:focus {
         text-align: center;
     }
 }
+*/
 
+
+.footer {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 50px;
+    background: #000000d6;
+}
+
+.footer .footer-contact,
+.footer .footer-link {
+    position: relative;
+    margin-bottom: 45px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2::after,
+.footer .footer-link h2::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #CC2D33;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.footer .footer-link a:hover {
+    color: #CC2D33;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 20px;
+    color: #ffffff;
+}
+
+.footer .footer-contact p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer .footer-social a i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.footer .footer-social a:hover {
+    color: #0A66C2;
+}
+
+.footer .copyright {
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.footer .copyright .row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #999999;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #ffffff;
+}
+
+.footer .copyright p a:hover {
+    color: #CC2D33;
+}
+
+/* --- Ajustes de Alinhamento Fino e Responsividade --- */
+
+/* Aplica o recuo apenas em telas Desktop (telas a partir de 992px de largura) */
+@media (min-width: 992px) {
+    .footer .footer-link.middle-col {
+        padding-left: 60px;
+        /* Desloca a coluna do meio criando simetria perfeita */
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer .footer-link a {
+        font-size: 13px;
+    }
+}
 
 
 /*******************************/
