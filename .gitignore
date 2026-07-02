@@ -5,3 +5,8 @@ config.php
 
 # (Opcional) Ignorar a pasta do PHPMailer se você não quiser versioná-la
 /PHPMailer/
+
+node_modules/
+.venv/
+dist/
+.env
