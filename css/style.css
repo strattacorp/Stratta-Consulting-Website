@@ -788,7 +788,6 @@ a:focus {
     list-style: circle;
 }
 
-/* Container que limita a altura e encapsula o formato Leaderboard */
 .about .about-leaderboard-container {
     width: 100%;
     max-height: 350px;
@@ -805,10 +804,8 @@ a:focus {
     object-position: center 25%;
 }
 
-/* --- RESPONSIVIDADE DO BANNER --- */
 @media (max-width: 991.98px) {
 
-    /* Em telas menores (celulares/tablets), reduzimos a altura do banner para manter a harmonia visual */
     .about .about-img-leaderboard {
         height: 220px;
     }
@@ -2106,106 +2103,6 @@ a:focus {
 }
 
 
-/*******************************/
-/********** Client CSS **********/
-/*******************************/
-/*.client {
-    position: relative;
-    width: 100%;
-    padding: 30px 0;
-}
-
-.client .client-img,
-.client .client-img-left {
-    position: relative;
-    width: 100%;
-    overflow: visible;
-}
-
-.client .client-img img,
-.client .client-img-left img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-radius: 3px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.25);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
-    z-index: 2;
-}
-
-.client .client-img img:hover,
-.client .client-img-left img:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-@media (min-width: 992px) {
-    .client .client-img-1 {
-        margin: 0;
-    }
-
-    .client .client-img-2 {
-        position: absolute;
-        z-index: 1;
-    }
-
-    .client .client-img-left-1 {
-        margin: 0;
-        z-index: 2;
-    }
-
-    .client .client-img-left-2 {
-        position: absolute;
-        z-index: 1;
-    }
-}
-
-@media (max-width: 991.98px) {
-
-    .client .client-img-1,
-    .client .client-img-2,
-    .client .client-img-left-1,
-    .client .client-img-left-2 {
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        margin: 0 0 20px 0 !important;
-        width: 100% !important;
-    }
-}
-
-.client .client-text p {
-    font-size: 16px;
-    text-align: justify;
-    margin-right: 10px;
-}
-
-.client .client-text a.btn {
-    position: relative;
-    margin-top: 15px;
-    padding: 12px 25px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #960F1C;
-    border: 2px solid #960F1C;
-    border-radius: 0;
-    background: none;
-    transition: .3s;
-}
-
-.client .client-text a.btn:hover {
-    color: #CC2D33;
-    background: #960F1C;
-}
-
-.client .client-text li {
-    font-size: 16px;
-    text-align: justify;
-    margin-left: 20px;
-    list-style: circle;
-}
-*/
 /*******************************/
 /********** Client CSS **********/
 /*******************************/
