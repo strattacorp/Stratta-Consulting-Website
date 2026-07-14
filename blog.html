@@ -5,94 +5,43 @@
     <meta charset="utf-8">
     <title>Oportunidades</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Consulting Website Template Free Download" name="keywords">
-    <meta content="Consulting Website Template Free Download" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page">
-    <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="top-bar-left">
-                        <div class="text">
-                            <i class="far fa-user"></i>
-                            <h2>Entre em contato</h2>
-                            <p></p>
-                        </div>
-                        <div class="text">
-                            <a href="mailto:contato@strattacorp.com.br"><i class="fa fa-envelope"></i></a>
-                            <a href="mailto:contato@strattacorp.com.br">
-                                <h2>contato@strattacorp.com.br</h2>
-                            </a>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="top-bar-right">
-                        <!-- Seletor de Idioma -->
-                        <div class="language-selector">
-                            <div class="selected-lang">
-                                <div class="text">
-                                    <i class="far fa-phone-alt"></i>
-                                    <!--<h2>Idioma</h2>-->
-                                </div>
-                                <img src="img/icon-globe.png" alt="Globo" class="lang-icon">
-                                <span>Port</span>
-                            </div>
-                            <!-- <div class="lang-dropdown">
-                                    <a href="index.html">Português</a>
-                                    <a href="index.html">English</a>
-                                    <a href="index.html">Español</a> 
-                                </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Bar End -->
-
+<body>
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar navbar-internal">
+        <div class="container-fluid container-custom">
             <a href="index.html" class="navbar-brand">
                 <picture>
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.avif" type="image/avif">
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.webp" type="image/webp">
-                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta">
+                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta" class="brand-logo">
                 </picture>
             </a>
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav align-items-lg-center">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <!-- <a href="about.html" class="nav-item nav-link">Sobre</a> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Soluções</a>
                         <div class="dropdown-menu">
-                            <a href="feature.html" class="dropdown-item">Soluções Integradas</a>
                             <a href="execsearch.html" class="dropdown-item">Recrutamento de Executivos</a>
                             <a href="assessment.html" class="dropdown-item">Assessment Corporativo</a>
                             <a href="coaching.html" class="dropdown-item">Coaching Executivo</a>
@@ -101,10 +50,21 @@
                     </div>
                     <a href="blog.html" class="nav-item nav-link active">Oportunidades</a>
                     <a href="contact.html" class="nav-item nav-link">Contato</a>
+
+                    <div class="nav-item dropdown language-selector-nav">
+                        <a href="#" class="nav-link dropdown-toggle lang-toggle" data-toggle="dropdown">
+                            <i class="fas fa-globe global-icon"></i> PT
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right lang-dropdown-menu">
+                            <a href="#" class="dropdown-item">Português</a>
+                            <!--<a href="#" class="dropdown-item">English</a>
+                            <a href="#" class="dropdown-item">Español</a>-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- Nav Bar End -->
 
     <!-- Blog Start -->
@@ -115,6 +75,37 @@
                 <h2>Processos em Desenvolvimento</h2>
             </div>
             <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <picture>
+                                <source srcset="img/abstract r&b gradient 02.avif" type="image/avif">
+                                <source srcset="img/abstract r&b gradient 02.webp" type="image/webp">
+                                <img src="img/abstract r&b gradient 02.jpg" alt="Gestor de Contas Sênior"
+                                    class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">Gerente Comercial Sênior</h2>
+                            <div class="blog-meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Comercial</a>
+                                <i class="fa fa-user"></i>
+                                <p>São Paulo, SP</p>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>Presencial</p>
+                            </div>
+                            <div class="blog-text">
+                                <p>
+                                    Empresa nacional com foco em soluções de Infraestrutura de TI,
+                                    buscando Gerente Sênior responsável por desenvolver estratégias
+                                    de vendas e relacionamento corporativo (B2B).
+                                </p>
+                                <a class="btn" href="opt260714a.html">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <div class="blog-item">
                         <div class="blog-img">
@@ -157,7 +148,7 @@
                             </picture>
                         </div>
                         <div class="blog-content">
-                            <h2 class="blog-title">Gestor de Contas Sênior - Ativação</h2>
+                            <h2 class="blog-title">Gestor de Contas Sênior</h2>
                             <div class="blog-meta">
                                 <i class="fa fa-list-alt"></i>
                                 <a href="">Comercial</a>
@@ -169,8 +160,8 @@
                             <div class="blog-text">
                                 <p>
                                     Empresa nacional com foco em soluções de Tecnologia da Informação,
-                                    e trabalha com multiplicidade de plataformas e soluções, que atendem
-                                    às necessidade de infraestrutura, outsourcing, consultoria e suporte.
+                                    e trabalha com multiplicidade de soluções, que atendem
+                                    às necessidade de infraestrutura, outsourcing e suporte.
                                 </p>
                                 <a class="btn" href="opt260601a.html">Mais detalhes</a>
                             </div>
@@ -209,83 +200,8 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                <div class="col-md-6">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <picture>
-                                <source srcset="img/urbanorigami-ai-03.avif" type="image/avif">
-                                <source srcset="img/urbanorigami-ai-03.webp" type="image/webp">
-                                <img src="img/urbanorigami-ai-03.png" alt="Head de Aprovações" class="img-fluid">
-                            </picture>
-                        </div>
-                        <div class="blog-content">
-                            <h2 class="blog-title">Head de Aprovações</h2>
-                            <div class="blog-meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Engenharia</a>
-                                <i class="fa fa-user"></i>
-                                <p>São Paulo, SP</p>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>Presencial</p>
-                            </div>
-                            <div class="blog-text">
-                                <p>
-                                    Empresa nacional referência no desenvolvimento de negócios e projetos de
-                                    real estate e infraestrutura, buscando um(a) profissional com experiência
-                                    em licenciamentos e legalização em projetos de construção e incorporação.
-                                </p>
-                                <a class="btn" href="opt260114a.html">Mais detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <div class="col-md-6">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <picture>
-                                <source srcset="img/abstract r&b gradient 02.avif" type="image/avif">
-                                <source srcset="img/abstract r&b gradient 02.webp" type="image/webp">
-                                <img src="img/abstract r&b gradient 02.jpg" alt="Head Jurídico (São Paulo, SP)"
-                                    class="img-fluid">
-                            </picture>
-                        </div>
-                        <div class="blog-content">
-                            <h2 class="blog-title">Head Jurídico (São Paulo, SP)</h2>
-                            <div class="blog-meta">
-                                <i class="fa fa-list-alt"></i>
-                                <a href="">Jurídico</a>
-                                <i class="fa fa-user"></i>
-                                <p>São Paulo, SP</p>
-                                <i class="fa fa-calendar-alt"></i>
-                                <p>Presencial</p>
-                            </div>
-                            <div class="blog-text">
-                                <p>
-                                    Empresa nacional referência no desenvolvimento de negócios e projetos de
-                                    infraestrutura e real estate, buscando um(a) profissional com experiência
-                                    como Head Jurídico, atuando fundamentalmente na articulação estratégica e
-                                    consultiva legal em apoio às negociações e M&As.
-                                </p>
-                                <a class="btn" href="opt251003a.html">Mais detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-            <!--
-            <div class="row">
-                <div class="col-12">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="blog2.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="blog2.html">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-            -->
         </div>
     </div>
     <!-- Blog End -->

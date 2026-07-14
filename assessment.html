@@ -5,106 +5,66 @@
     <meta charset="utf-8">
     <title>Assessment</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Consulting Website Template Free Download" name="keywords">
-    <meta content="Consulting Website Template Free Download" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page">
-    <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="top-bar-left">
-                        <div class="text">
-                            <i class="far fa-user"></i>
-                            <h2>Entre em contato</h2>
-                            <p></p>
-                        </div>
-                        <div class="text">
-                            <a href="mailto:contato@strattacorp.com.br"><i class="fa fa-envelope"></i></a>
-                            <a href="mailto:contato@strattacorp.com.br">
-                                <h2>contato@strattacorp.com.br</h2>
-                            </a>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="top-bar-right">
-                        <!-- Seletor de Idioma -->
-                        <div class="language-selector">
-                            <div class="selected-lang">
-                                <div class="text">
-                                    <i class="far fa-phone-alt"></i>
-                                    <!--<h2>Idioma</h2>-->
-                                </div>
-                                <img src="img/icon-globe.png" alt="Globo" class="lang-icon">
-                                <span>Port</span>
-                            </div>
-                            <!-- <div class="lang-dropdown">
-                                    <a href="index.html">Português</a>
-                                    <a href="index.html">English</a>
-                                    <a href="index.html">Español</a> 
-                                </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Bar End -->
-
+<body>
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar navbar-internal">
+        <div class="container-fluid container-custom">
             <a href="index.html" class="navbar-brand">
                 <picture>
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.avif" type="image/avif">
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.webp" type="image/webp">
-                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta">
+                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta" class="brand-logo">
                 </picture>
             </a>
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav align-items-lg-center">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <!-- <a href="about.html" class="nav-item nav-link">Sobre</a> -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Soluções</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Soluções</a>
                         <div class="dropdown-menu">
-                            <a href="feature.html" class="dropdown-item">Soluções Integradas</a>
                             <a href="execsearch.html" class="dropdown-item">Recrutamento de Executivos</a>
-                            <a href="assessment.html" class="dropdown-item active">Assessment Corporativo</a>
+                            <a href="assessment.html" class="dropdown-item">Assessment Corporativo</a>
                             <a href="coaching.html" class="dropdown-item">Coaching Executivo</a>
                             <a href="advisory-board.html" class="dropdown-item">Conselho Consultivo</a>
                         </div>
                     </div>
                     <a href="blog.html" class="nav-item nav-link">Oportunidades</a>
                     <a href="contact.html" class="nav-item nav-link">Contato</a>
+
+                    <div class="nav-item dropdown language-selector-nav">
+                        <a href="#" class="nav-link dropdown-toggle lang-toggle" data-toggle="dropdown">
+                            <i class="fas fa-globe global-icon"></i> PT
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right lang-dropdown-menu">
+                            <a href="#" class="dropdown-item">Português</a>
+                            <!--<a href="#" class="dropdown-item">English</a>
+                            <a href="#" class="dropdown-item">Español</a>-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- Nav Bar End -->
 
     <!-- Solution Start -->

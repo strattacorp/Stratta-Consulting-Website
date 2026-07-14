@@ -3,113 +3,68 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gerente Obras Sr</title>
+    <title>Gerente Comercial Sênior</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Consulting Website Template Free Download" name="keywords">
-    <meta content="Consulting Website Template Free Download" name="description">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page">
-    <!-- Top Bar Start -->
-    <div class="top-bar d-none d-md-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="top-bar-left">
-                        <div class="text">
-                            <i class="far fa-user"></i>
-                            <h2>Entre em contato</h2>
-                            <p></p>
-                        </div>
-                        <div class="text">
-                            <a href="mailto:contato@strattacorp.com.br"><i class="fa fa-envelope"></i></a>
-                            <a href="mailto:contato@strattacorp.com.br">
-                                <h2>contato@strattacorp.com.br</h2>
-                            </a>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="top-bar-right">
-                        <!-- Seletor de Idioma -->
-                        <div class="language-selector">
-                            <div class="selected-lang">
-                                <div class="text">
-                                    <i class="far fa-phone-alt"></i>
-                                    <!--<h2>Idioma</h2>-->
-                                </div>
-                                <img src="img/icon-globe.png" alt="Globo" class="lang-icon">
-                                <span>Port</span>
-                            </div>
-                            <!-- <div class="lang-dropdown">
-                                    <a href="index.html">Português</a>
-                                    <a href="index.html">English</a>
-                                    <a href="index.html">Español</a> 
-                                </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Bar End -->
-
+<body>
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar navbar-internal">
+        <div class="container-fluid container-custom">
             <a href="index.html" class="navbar-brand">
                 <picture>
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.avif" type="image/avif">
                     <source srcset="img/Logo Stratta_Horiz_Final_Blank.webp" type="image/webp">
-                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta">
+                    <img src="img/Logo Stratta_Horiz_Final_Blank.png" alt="Logo Stratta" class="brand-logo">
                 </picture>
             </a>
+
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <!-- <a href="about.html" class="nav-item nav-link">Sobre</a> -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav align-items-lg-center">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Soluções</a>
                         <div class="dropdown-menu">
-                            <a href="feature.html" class="dropdown-item">Soluções Integradas</a>
                             <a href="execsearch.html" class="dropdown-item">Recrutamento de Executivos</a>
                             <a href="assessment.html" class="dropdown-item">Assessment Corporativo</a>
                             <a href="coaching.html" class="dropdown-item">Coaching Executivo</a>
                             <a href="advisory-board.html" class="dropdown-item">Conselho Consultivo</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Oportunidades</a>
-                        <div class="dropdown-menu">
-                            <a href="blog.html" class="dropdown-item">Vagas Abertas</a>
+                    <a href="blog.html" class="nav-item nav-link">Oportunidades</a>
+                    <a href="contact.html" class="nav-item nav-link">Contato</a>
+
+                    <div class="nav-item dropdown language-selector-nav">
+                        <a href="#" class="nav-link dropdown-toggle lang-toggle" data-toggle="dropdown">
+                            <i class="fas fa-globe global-icon"></i> PT
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right lang-dropdown-menu">
+                            <a href="#" class="dropdown-item">Português</a>
+                            <!--<a href="#" class="dropdown-item">English</a>
+                            <a href="#" class="dropdown-item">Español</a>-->
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contato</a>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- Nav Bar End -->
 
     <!-- Single Page Start -->
@@ -117,16 +72,14 @@
         <div class="container">
             <div class="section-header">
                 <p>Posição em destque</p>
-                <h2>Gerente Sênior de Obras</h2>
+                <h2>Gerente Comercial Sênior</h2>
             </div>
             <div class="row">
                 <div class="col-12">
                     <p>
-                        Nosso cliente é uma empresa nacional de investimentos, referência no desenvolvimento de
-                        negócios e projetos de Infraestrutura e Real Estate, buscando um(a) profissional com
-                        experiência destacada em gestão de projetos e obras para liderar, planejar, coordenar e
-                        controlar os direcionamentos técnicos e de execução de obras de um portfólio de projetos,
-                        garantindo que sejam entregues dentro do prazo, custo, escopo e qualidade estabelecidos.
+                        Nosso cliente é uma empresa nacional de Infraestrutura de TI, orientada à
+                        projetos e soluções com foco em outsourcing, consultoria e serviços de
+                        suporte em desenvolvimento e aplicações de Tecnologia da Informação.
                     </p><br>
 
                     <h5>Localidade</h5>
@@ -141,67 +94,52 @@
 
                     <h5>Reporte Direto</h5>
                     <p>
-                        Sócio Diretor
+                        Diretor Comercial
                     </p><br>
 
                     <h5>Principais Responsabilidades</h5>
                     <ul class="ul-group">
-                        <li>Desenvolver e implementar a estratégia de engenharia e construção dos projetos da
-                            empresa, alinhadas aos objetivos de negócio.</li>
-                        <li>Elaborar e gerir o planejamento orçamentário, controlando custos e buscando
-                            eficiência operacional.</li>
-                        <li>Selecionar, negociar e gerenciar contratos com parceiros e contratadas.</li>
-                        <li>Gerir e apresentar relatórios de desempenho, status de projetos e KPIs para a
-                            diretoria e demais stakeholders.</li>
-                        <li>Supervisionar e aprovar o desenvolvimento de projetos, garantindo otimização de
-                            soluções e viabilidade técnica e econômica.</li>
-                        <li>Gerenciar mudanças de escopo, identificando impactos no custo e prazo, propondo
-                            mitigações.</li>
-                        <li>Coordenar e fiscalizar toda a execução das obras em campo, assegurando o cumprimento
-                            dos projetos, especificações e normas técnicas.</li>
-                        <li>Gerenciar o controle de qualidade de materiais, serviços e etapas construtivas,
-                            realizando inspeções e auditorias.</li>
-                        <li>Garantir a conformidade legal de todos os projetos e obras.</li>
+                        <li>Definir e implementar planos de vendas alinhados às metas da empresa.</li>
+                        <li>Identificar oportunidades de negócios em contas estratégicas e novos mercados.</li>
+                        <li>Negociar contratos complexos envolvendo soluções integradas.</li>
+                        <li>Atingir metas de faturamento, margem e crescimento sustentável.</li>
+                        <li>Monitorar KPIs de vendas, pipeline e satisfação do cliente.</li>
+                        <li>Reportar resultados à diretoria e propor ajustes estratégicos.</li>
+                        <li>Desenvolver relacionamento próximo com clientes-chave, atendimento
+                            personalizado e direcionamento de soluções assertivas.</li>
+                        <li>Estabelecer relacionamentos de longo prazo com decisores de alto
+                            nível (CIOs, CTOs, Diretores de TI).</li>
+                        <li>Negociar condições comerciais, rebates e incentivos.</li>
+                        <li>Coordenar campanhas conjuntas de marketing e vendas.</li>
+                        <li>Liderar e desenvolver equipe de executivos de contas e pré-vendas.</li>
+                        <li>Promover cultura de alta performance e foco em resultados.</li>
                     </ul>
                     <br>
 
                     <h5>Conhecimentos e Habilidades Especificas</h5>
                     <ul class="ul-group">
-                        <li>Experiência mínima de 15 anos em funções progressivas na área de construção civil e
-                            pelo menos 5 anos em cargo de gestão, liderando equipes e gerenciando múltiplos
-                            projetos ou grandes empreendimentos de forma simultânea.</li>
-                        <li>Vivência completa em todo o ciclo de vida de projetos, desde a concepção até a
-                            entrega e closeout.</li>
-                        <li>Domínio avançado de ferramentas de gestão de projetos e expertise em orçamentação.</li>
-                        <li>Capacidade de inspirar, motivar e guiar equipes técnicas.</li>
-                        <li>Habilidade para se comunicar com todos os níveis, desde operários até a diretoria.</li>
-                        <li>Capacidade de enxergar o todo, antecipar riscos e tomar decisões complexas.</li>
+                        <li>Experiência sólida em vendas complexas B2B no setor de TI.</li>
+                        <li>Conhecimento abrangente de soluções de TI e histórico de
+                            relacionamento com clientes e canais.</li>
+                        <li>Habilidade em liderança de equipes comerciais e técnicas.</li>
+                        <li>Visão estratégica e foco em resultados.</li>
+                        <li>Capacidade de negociação em alto nível.</li>
+                        <li>Comunicação clara e persuasiva.</li>
+                        <li>Inglês avançado (desejável).</li>
                     </ul>
                     <br>
 
                     <h5>Formação</h5>
                     <ul class="ul-group">
-                        <li>Bacharelado em Engenharia Civil e altamente desejável Pós-graduação/MBA em Gestão
-                            de Projetos, Gerenciamento de Obras ou áreas afins.</li>
+                        <li>Graduação em Administração, Engenharia, Tecnologia da Informação ou áreas correlatas.</li>
+                        <li>MBA em Gestão de Negócios será considerado um diferencial.</li>
                     </ul>
                     <br>
 
-                    <h5>Benefícios</h5>
-                    <p>Remuneração e benefícios atrativos em linha com o mercado.</p>
-
-                    <!-- Botão "Traço" para envio ao cadastro@strattacorp.com.br
-                        <div class="blog blog-page mt-50">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="blog-item">
-                                        <div class="blog-text">
-                                            <a class="btn" href="mailto:cadastro@strattacorp.com.br">Participar</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        -->
+                    <h5>Remuneração e Benefícios</h5>
+                    <ul class="ul-group">
+                        <li>Salário fixo PJ, bônus por performance e benefícios</li>
+                    </ul>
 
                     <div class="about">
                         <div class="container">
