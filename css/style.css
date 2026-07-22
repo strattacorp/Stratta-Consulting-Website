@@ -1737,7 +1737,8 @@ body {
 }
 
 .solution .solution-img img {
-    height: 350px;
+    height: auto;
+    max-height: 350px;
     object-fit: cover;
     object-position: top;
 }
@@ -1826,7 +1827,7 @@ body {
     }
 
     .solution .solution-img img {
-        height: 250px;
+        height: auto;
     }
 
     .solution .lead-text {
