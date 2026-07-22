@@ -107,7 +107,7 @@ body {
 
 @media (max-width: 991.98px) {
     .main-navbar {
-        background: #4a4643ca !important;
+        background: #4a4643 !important;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -503,7 +503,7 @@ body {
 .section-header h2 {
     margin: 0 0 0 40px;
     position: relative;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 200;
 }
 
@@ -589,7 +589,7 @@ body {
 }
 
 .about .section-header {
-    margin-top: 15px;
+    margin-top: 2px;
     margin-bottom: 15px;
     margin-left: 5px;
 }
@@ -786,6 +786,27 @@ body {
     }
 }
 
+/* Ajuste exclusivo para a página Sobre [feature.html] */
+.about .about-leaderboard-container.feature-leaderboard {
+    max-height: 350px;
+}
+
+.about .about-leaderboard-container.feature-leaderboard .about-img-leaderboard {
+    height: 480px;
+    object-position: center 100%;
+}
+
+@media (max-width: 991.98px) {
+    .about .about-leaderboard-container.feature-leaderboard {
+        max-height: 300px;
+    }
+
+    .about .about-leaderboard-container.feature-leaderboard .about-img-leaderboard {
+        height: 300px;
+        object-position: center 30%;
+    }
+}
+
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
@@ -834,7 +855,7 @@ body {
 .service .service-item a {
     position: relative;
     font-size: 15px;
-    color: #CC2D33;
+    color: #960F1C;
     transition: .3s;
 }
 
@@ -845,7 +866,7 @@ body {
     height: 2px;
     bottom: -3px;
     left: 10%;
-    background: #CC2D33;
+    background: #960F1C;
 }
 
 .service .service-item:hover a.btn {
@@ -907,7 +928,7 @@ body {
     position: relative;
     display: inline-block;
     color: #960F1C;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 300;
 }
 
@@ -921,6 +942,7 @@ body {
 .feature .counters p {
     color: #960F1C;
     font-size: 20px;
+    text-align: left;
     margin: 0;
 }
 
@@ -1657,7 +1679,7 @@ body {
 }
 
 .footer .copyright .col-md-6:last-child p {
-    text-align: right;
+    text-align: left;
 }
 
 .footer .copyright p a {
@@ -1696,222 +1718,122 @@ body {
 .solution {
     position: relative;
     width: 100%;
-    padding: 25px 0;
-    background-color: rgba(231, 230, 230, 0.358);
+    padding: 40px 0;
+    background-color: rgba(245, 245, 245, 0.6);
 }
 
 .solution .section-header {
-    margin-bottom: 35px;
-}
-
-.solution .solution-carousel {
-    position: relative;
-    width: calc(100% + 30px);
-    left: -15px;
-    right: -15px;
+    margin-bottom: 40px;
 }
 
 .solution .solution-item {
     position: relative;
-    margin: 0 15px;
-}
-
-.solution .solution-page .solution-item {
-    margin: -30px 0 0 0;
+    margin: 0;
 }
 
 .solution .solution-img {
-    position: relative;
     width: 100%;
-    z-index: 1;
+    overflow: hidden;
 }
 
 .solution .solution-img img {
-    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
 }
 
+/* Tratamento moderno da caixa flutuante */
 .solution .solution-content {
     position: relative;
-    width: calc(100% - 60px);
-    top: -60px;
-    left: 30px;
-    padding: 25px 30px;
+    width: calc(100% - 20px);
+    margin: -80px auto 0 auto;
+    padding: 40px;
     background: #ffffff;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
-    z-index: 2;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    z-index: 5;
 }
 
-.solution .solution-content h2.blog-title {
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.solution .solution-meta {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.solution .solution-meta * {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 300;
-    color: #797979;
-}
-
-.solution .solution-meta i {
-    color: #CC2D33;
-    margin: 0 2px 0 10px;
-}
-
-.solution .solution-meta i:first-child {
-    margin-left: 0;
-}
-
-.solution .solution-text {
-    position: relative;
-}
-
-.solution .solution-text p {
-    margin-bottom: 15px;
-    margin-right: 30px;
-    text-align: justify;
-    color: #000000;
-}
-
-.solution .solution-item a.btn {
-    position: relative;
-    padding: 0 0 0 35px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #CC2D33;
-    transition: .3s;
-}
-
-.solution .solution-item a.btn:hover {
-    color: #960F1C;
-}
-
-.solution .solution-item a.btn::before {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 2px;
-    top: 10px;
-    left: 0;
-    background: #CC2D33;
-}
-
-.solution .owl-nav {
-    position: relative;
-    width: 100%;
-    margin-top: -30px;
-    display: flex;
-    justify-content: center;
-}
-
-.solution .owl-nav .owl-prev,
-.solution .owl-nav .owl-next {
-    position: relative;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #CC2D33;
-    font-size: 25px;
-    transition: .3s;
-}
-
-.solution .owl-nav .owl-prev {
-    padding-right: 80px;
-}
-
-.solution .owl-nav .owl-next {
-    padding-left: 80px;
-}
-
-.solution .owl-nav .owl-prev:hover,
-.solution .owl-nav .owl-next:hover {
-    color: #960F1C;
-}
-
-.solution .owl-nav .owl-prev::after,
-.solution .owl-nav .owl-next::after {
-    position: absolute;
-    content: "";
-    width: 80px;
+.solution .accent-line {
+    width: 60px;
     height: 3px;
-    top: 11px;
-    background: #CC2D33;
-    transition: .3s;
+    background-color: #CC2D33;
+    opacity: 1;
+    border: none;
+    margin: 15px 0;
 }
 
-.solution .owl-nav .owl-prev::after {
-    left: 9px;
+.solution .lead-text {
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: #333333;
+    text-align: justify;
 }
 
-.solution .owl-nav .owl-next::after {
-    right: 9px;
+.execution-grid {
+    margin-top: 25px;
 }
 
-.solution .owl-nav .owl-prev:hover::after {
-    background: #960F1C;
-}
-
-.solution .owl-nav .owl-next:hover::after {
-    background: #960F1C;
-}
-
-.solution .pagination {
-    margin-bottom: 0;
-}
-
-.solution .pagination .page-link {
-    margin-top: -30px;
-    color: #960F1C;
-    border-radius: 0;
-    border-color: #960F1C;
-}
-
-.solution .pagination .page-link:hover,
-.solution .pagination .page-item.active .page-link {
-    color: #CC2D33;
-    background: #960F1C;
-}
-
-.solution .pagination .disabled .page-link {
-    color: #999999;
-}
-
-.solution .table,
-.solution .list-group {
-    margin-bottom: 30px;
-}
-
-.solution .ul-group {
-    padding: 0;
-    list-style: none;
-}
-
-.solution .ul-group li {
-    margin-left: 2px;
-}
-
-.solution .ul-group li::before {
+.step-card {
+    background: #fdfdfd;
+    border: 1px solid #eaeaea;
+    padding: 25px;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
-    content: "\f0da";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
 }
 
-.solution .ol-group {
-    padding-left: 18px;
+.step-card:hover {
+    transform: translateY(-5px);
+    border-color: #CC2D33;
+    box-shadow: 0 10px 25px rgba(204, 45, 51, 0.08);
 }
 
+.step-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(204, 45, 50, 0.663);
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.step-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.step-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+.highlighted-step {
+    background: linear-gradient(145deg, #ffffff, #fff5f5);
+    border-left: 4px solid #CC2D33;
+}
+
+@media (max-width: 991.98px) {
+    .solution .solution-content {
+        width: 100%;
+        margin-top: 0;
+        padding: 25px 20px;
+        box-shadow: none;
+    }
+
+    .solution .solution-img img {
+        height: 250px;
+    }
+
+    .solution .lead-text {
+        font-size: 15px;
+        text-align: left;
+    }
+}
 
 /*******************************/
 /********** Client CSS **********/
@@ -1919,128 +1841,112 @@ body {
 .client {
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .client .client-leaderboard-container {
     width: 100%;
-    max-height: 350px;
+    max-height: 380px;
     overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.25);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .client .client-img-leaderboard {
     width: 100%;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
-    object-position: center center;
+    object-position: center;
 }
 
-.client .client-leaderboard-container:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
+.corporate-governance-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 4px;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
 }
 
-.client .client-img,
-.client .client-img-left {
-    position: relative;
-    width: 100%;
-    overflow: visible;
-}
-
-@media (min-width: 992px) {
-    .client .client-img-1 {
-        margin: 0;
-    }
-
-    .client .client-img-2 {
-        position: absolute;
-        z-index: 1;
-    }
-
-    .client .client-img-left-1 {
-        margin: 0;
-        z-index: 2;
-    }
-
-    .client .client-img-left-2 {
-        position: absolute;
-        z-index: 1;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .client .client-img-leaderboard {
-        height: 220px;
-    }
-
-    .client .client-leaderboard-container {
-        max-height: 220px;
-    }
-
-    .client .client-img-1,
-    .client .client-img-2,
-    .client .client-img-left-1,
-    .client .client-img-left-2 {
-        position: relative !important;
-        top: 0 !important;
-        left: 0 !important;
-        margin: 0 0 20px 0 !important;
-        width: 100% !important;
-    }
+.corporate-governance-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
 .client .client-text p {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #444444;
     text-align: left;
-    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
-.client .client-text a.btn {
+@media (max-width: 991.98px) {
+
+    .client .client-img-leaderboard,
+    .client .client-leaderboard-container {
+        height: 200px;
+        max-height: 200px;
+    }
+
+    .corporate-governance-card {
+        padding: 15px 10px;
+    }
+}
+
+client.feature-client-section {
     position: relative;
-    margin-top: 15px;
-    padding: 12px 25px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    padding: 30px 0 60px 0;
+}
+
+/* Card de estilo exclusivo para feature.html */
+.feature-client-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #960F1C;
+    padding: 40px 32px;
+    border-radius: 2px;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    border-color: rgba(150, 15, 28, 0.2);
+    border-top-color: #CC2D33;
+}
+
+.feature-client-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
     color: #960F1C;
-    border: 2px solid #960F1C;
-    border-radius: 0;
-    background: none;
-    transition: .3s;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: block;
 }
 
-.client .client-text a.btn:hover {
-    color: #CC2D33;
-    background: #960F1C;
-}
-
-.client .client-text li {
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
-    list-style: circle;
-}
-
-.section-header h3 {
-    position: relative;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+.feature-client-card h3 {
+    font-size: 21px;
     font-weight: 600;
-}
-
-.section-header h3::before,
-.section-header h3::after {
-    content: '';
-    position: absolute;
-}
-
-.client .section-header h3 {
-    font-size: 20px;
+    color: #1F1F1F;
+    margin-bottom: 16px;
     line-height: 1.3;
+}
+
+.feature-client-card p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.65;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+@media (max-width: 991.98px) {
+    .feature-client-card {
+        padding: 30px 24px;
+    }
 }
 
 /*******************************/
@@ -2213,4 +2119,37 @@ body {
 .solution .solution-item:hover .solution-img img,
 .solution2 .solution-item:hover .solution-img img {
     transform: scale(1.02);
+}
+
+
+/*******************************************/
+/************* Coaching CSS ***************/
+/*****************************************/
+
+.coaching-framework,
+.coaching-benefits {
+    padding: 30px 0;
+}
+
+.custom-coaching-list li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.custom-coaching-list li::before {
+    content: "•";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom-coaching-list li strong {
+    color: #111111;
+    display: inline;
 }
