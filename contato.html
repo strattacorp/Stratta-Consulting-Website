@@ -109,12 +109,15 @@
                         <form name="sentMessage" id="contactForm" accept-charset="UTF-8"
                             action="https://formsubmit.co/contato@strattacorp.com.br" method="POST">
                             <input type="hidden" name="_subject" value="Nova mensagem do site" />
-                            <input type="hidden" name="_next" value="./index.html" />
-                            <input type="hidden" name="_error" value="./contact.html?error=1" />
+                            <input type="hidden" name="_cc" value="marcelo.mandeli@strattacorp.com.br">
+                            <input type="hidden" name="_next" value="https://strattacorp.com.br/agradecimento.html" />
+                            <input type="hidden" name="_error"
+                                value="https://strattacorp.com.br/contato.html?error=1" />
                             <input type="hidden" name="_captcha" value="false" />
                             <input type="hidden" name="_language" value="pt-BR" />
+                            <input type="hidden" name="_template" value="box">
                             <input type="hidden" name="_autoresponse"
-                                value="Obrigado pelo contato! Entraremos em contato em breve." />
+                                value="Obrigado pela sua mensagem! Entraremos em contato o mais breve possível." />
                             <div class="control-group">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Nome"
                                     required="required" />

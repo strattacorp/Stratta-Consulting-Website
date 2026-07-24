@@ -3,20 +3,212 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Obrigado</title>
+    <title>Mensagem Enviada | Stratta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Bootstrap 4.4.1 -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontes Google & Ícones FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS do Projeto -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body.thank-you-page {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .thank-you-card {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            padding: 50px 40px;
+            max-width: 620px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 28px;
+            background: rgba(40, 167, 69, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box i {
+            font-size: 38px;
+            color: #28a745;
+        }
+
+        .thank-you-card h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a252f;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .thank-you-card p.lead-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #5a6578;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 30px auto;
+            width: 80%;
+        }
+
+        .btn-group-custom {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-custom-primary {
+            background-color: #4a4643c1;
+            border-color: #4a4643c1;
+            color: #ffffff;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-custom-primary:hover {
+            background-color: #960F1C;
+            border-color: #960F1C;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(15, 43, 72, 0.2);
+            text-decoration: none;
+        }
+
+        .btn-custom-outline {
+            background-color: transparent;
+            border: 1px solid #6c757d;
+            color: #495057;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-custom-outline:hover {
+            background-color: #f8f9fa;
+            border-color: #343a40;
+            color: #212529;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .footer-note {
+            font-size: 13px;
+            color: #8c98a4;
+            margin-top: 25px;
+        }
+
+        .footer-note a {
+            color: #0f2b48;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 576px) {
+            .thank-you-card {
+                padding: 35px 20px;
+                margin: 0 15px;
+            }
+
+            .btn-group-custom {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-custom-primary,
+            .btn-custom-outline {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 
-<body class="page">
-    <div class="container" style="padding:80px 0;text-align:center;">
-        <h1>Obrigado!</h1>
-        <p>Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.</p>
-        <p><a class="btn btn-primary" href="contato.html">Voltar ao formulário</a>
-            <a class="btn btn-secondary" href="index.html">Ir para o site</a>
-        </p>
+<body class="thank-you-page">
+
+    <div class="container d-flex justify-content-center">
+        <div class="thank-you-card">
+            <div class="icon-box">
+                <i class="fas fa-check"></i>
+            </div>
+
+            <!-- Título Principal -->
+            <h1>Mensagem Recebida!</h1>
+
+            <!-- Mensagem de Confirmação -->
+            <p class="lead-text">
+                Agradecemos o seu contato com a <strong>Stratta</strong>. Sua mensagem foi enviada com sucesso e nossa
+                equipe retornará em breve.
+            </p>
+
+            <div class="divider"></div>
+
+            <!-- Botões de Ação -->
+            <div class="btn-group-custom">
+                <a class="btn-custom-primary" href="index.html">
+                    <i class="fas fa-home"></i> Ir para a Home
+                </a>
+                <a class="btn-custom-outline" href="contato.html">
+                    <i class="fas fa-arrow-left"></i> Voltar ao Formulário
+                </a>
+            </div>
+
+            <!-- Nota de Rodapé -->
+            <p class="footer-note">
+                Precisa de retorno urgente? Envie um e-mail direto para <a
+                    href="mailto:contato@strattacorp.com.br">contato@strattacorp.com.br</a>.
+            </p>
+        </div>
     </div>
+
 </body>
 
 </html>
